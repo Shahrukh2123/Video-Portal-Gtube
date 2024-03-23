@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	
+	 
+		c.redirecttoGentubeHome=function(url){
+		window.location.href=url;
+	}
+	c.open=function(){
+		 document.getElementById("mySidebar").style.width = "15%";
+  document.getElementById("mySidebar").style.display = "block";
+	}
+	c.close=function(){
+		  document.getElementById("mySidebar").style.display = "none";
+	}
+
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.btn { /* Blue background */&#13;
+ // border: solid 1px; /* Remove borders */&#13;
+  color:  #007199; /* White text */&#13;
+  padding: 12px 12px /* Some padding */&#13;
+  font-size: 20px; /* Set a font size */&#13;
+  cursor: pointer; &#13;
+  background: #FAFCFC;/* Mouse pointer on hover */&#13;
+  //margin-bottom: 8px;&#13;
+  margin: 12px 0px;&#13;
+}&#13;
+&#13;
+/* Darker background on mouse-over */&#13;
+.btn:hover {&#13;
+  background-color: #cce3e3;&#13;
+}&#13;
+.btn:focus {&#13;
+   outline:none;&#13;
+  border:none;&#13;
+  box-shadow:none;&#13;
+}&#13;
+&#13;
+&#13;
+div {&#13;
+  background-color: #ffffff;&#13;
+  width: 50px;&#13;
+//border-right-style: solid;&#13;
+}&#13;
+  //border: solid 1px;&#13;
+   &#13;
+.parent {&#13;
+  width: 100%;&#13;
+  border-right: solid 1px;&#13;
+  &#13;
+}&#13;
+&#13;
+.badge {&#13;
+  padding-left: 9px;&#13;
+  padding-right: 9px;&#13;
+  -webkit-border-radius: 9px;&#13;
+  -moz-border-radius: 9px;&#13;
+  border-radius: 9px;&#13;
+  color: #4e4b4b;&#13;
+}&#13;
+&#13;
+.btn .badge {&#13;
+    position: relative;&#13;
+    top: 6px;&#13;
+  	outline: 0px;&#13;
+}&#13;
+&#13;
+.label-warning[href],&#13;
+.badge-warning[href] {&#13;
+  background-color: #cce3e3;&#13;
+}&#13;
+&#13;
+.nav{&#13;
+ height:24px;&#13;
+ width:100%;&#13;
+ padding: 0px 0px 0px 2px;&#13;
+  &#13;
+}&#13;
+&#13;
+.fa2{&#13;
+ padding: 0px 0px 0px 6px&#13;
+}&#13;
+&#13;
+.active {&#13;
+  background-color: #cce3e3;&#13;
+  box-shadow: none;&#13;
+}&#13;
+&#13;
+.btn:focus, .btn.focus, .btn:active:focus, .btn.focus:active, .btn.active:focus, .btn.active.focus {&#13;
+    &#13;
+    outline: none!important;&#13;
+    outline-offset: 0px !important; &#13;
+  	border: none;&#13;
+  	//color: rgb(99, 102, 241);&#13;
+}&#13;
+&#13;
+.layout {&#13;
+  background: #FAFCFC 0% 0% no-repeat padding-box;&#13;
+}&#13;
+&#13;
+.enav {&#13;
+  position: fixed;&#13;
+  display: inline-flex;&#13;
+  flex-direction: column;&#13;
+  margin-top: 0px;&#13;
+  background-color: #fff;&#13;
+  box-shadow: 2px 0px 5px #aaaaaa;&#13;
+  &#13;
+}&#13;
+&#13;
+.easide {&#13;
+  width: 82px;&#13;
+  display: flex;&#13;
+  flex-direction: column;&#13;
+  background-color: #fff;&#13;
+  padding-right: 16px;&#13;
+  padding-left: 12px;&#13;
+  min-height: 100vh;&#13;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);&#13;
+}&#13;
+&#13;
+.enavLink {&#13;
+  color: rgba(75, 85, 99, 1);&#13;
+  padding: 8px 0;&#13;
+  cursor: pointer;&#13;
+  border-radius: 8px;&#13;
+      padding-bottom: 15.6rem;&#13;
+    margin-top: 33px;&#13;
+}&#13;
+&#13;
+.enavLinkImg {&#13;
+  height: 32px;&#13;
+  width: 60px;&#13;
+  padding: 0 12px;&#13;
+  background-color: transparent;&#13;
+}&#13;
+&#13;
+.divider {&#13;
+  height: 2px;&#13;
+  width: 124%;&#13;
+  background-color: rgba(229, 231, 235,1);&#13;
+}&#13;
+&#13;
+.enavLink:focus{&#13;
+ outline:none;&#13;
+  border:none;&#13;
+  box-shadow:none;&#13;
+}&#13;
+.nav-link-text{&#13;
+  font-size:16px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>nav_link_video_portal_mobile</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Nav Links Video Portal Mobile</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>703318399</sys_created_by>
+        <sys_created_on>2023-03-01 04:54:26</sys_created_on>
+        <sys_id>d2796c354719e19024d43b37e26d432b</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Nav Links Video Portal Mobile</sys_name>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+        <sys_update_name>sp_widget_d2796c354719e19024d43b37e26d432b</sys_update_name>
+        <sys_updated_by>703318399</sys_updated_by>
+        <sys_updated_on>2023-03-01 06:44:15</sys_updated_on>
+        <template><![CDATA[<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<div id="mySidebar" style="display:none">
+<nav class="enav">
+  <button ng-click="c.close()" class="btn text-dark" style="background: transparent;font-size: 19px;font-weight: 600;">&times;</button>
+    <a target="_blank" ng-click="c.redirecttoGentubeHome('/vpa?id=home_vpa')" class="enavLink" title="Overview">
+      <img
+        src="360Overview.svg"
+        class="enavLinkImg"
+        width="57px"
+        height="63px"
+        alt="home" 
+      />
+      <br> <p class="text-center nav-link-text">Home</p>
+    </a>
+      <div style="margin-top:20px;margin-bottom:20px;">
+      <div class="divider"></div>
+    </div>
+    
+     <a target="_blank"  href="/vpa?id=vpa_enablment_videos" 
+      class="enavLink"
+      title="App Store"
+    >
+      <img
+        src="360Portfolio.svg"
+        class="enavLinkImg"
+        width="57"
+        height="63"
+        alt="home"
+      />
+            <br> <p class="text-center nav-link-text" style="font-size:11px;">Enablement</p>
+       
+    </a>
+    
+ 
+  </nav>
+ </div>
+<button class="btn btn-secondary" style="font-size: 19px;font-weight: 600;background:transparent;margin-left: -3px;" ng-click="c.open()">☰</button>
+]]></template>
+    </sp_widget>
+</record_update>

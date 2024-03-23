@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($window,$timeout) {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>#demo{
+ margin-top:18rem;
+ display:block; 
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>service_now_training_videos</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>service now training videos</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>703318399</sys_created_by>
+        <sys_created_on>2023-03-09 06:44:02</sys_created_on>
+        <sys_id>bd4f461c4721ed5024d43b37e26d43a3</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>service now training videos</sys_name>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+        <sys_update_name>sp_widget_bd4f461c4721ed5024d43b37e26d43a3</sys_update_name>
+        <sys_updated_by>703318399</sys_updated_by>
+        <sys_updated_on>2023-03-09 11:43:38</sys_updated_on>
+        <template><![CDATA[  <script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script>
+<div>
+  <center><img src="/x_ggisu_ops360_t_0.genpact_loading.gif" id="demo" width="100px"></center>
+  <div class="vidios-container">
+     <iframe src="https://widget.tagembed.com/78813?view" style=" width:100%;height:1200px;overflow: auto;" frameborder="0" allowtransparency="true"></iframe>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  const myTimeout = setTimeout(myGreeting, 3000);
+
+function myGreeting() {
+  document.getElementById("demo").style.display = 'none';
+}
+</script>
+
+]]></template>
+    </sp_widget>
+</record_update>

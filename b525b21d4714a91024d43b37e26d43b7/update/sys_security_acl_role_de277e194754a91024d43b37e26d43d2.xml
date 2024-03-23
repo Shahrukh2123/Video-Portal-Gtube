@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>703318399</sys_created_by>
+        <sys_created_on>2023-01-09 08:53:43</sys_created_on>
+        <sys_id>de277e194754a91024d43b37e26d43d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_ggisu_video_por1_video_portal_g_tube.x_ggisu_video_por1.video_enablements_access</sys_name>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+        <sys_security_acl display_value="x_ggisu_video_por1_video_portal_g_tube">96277e194754a91024d43b37e26d43ce</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_de277e194754a91024d43b37e26d43d2</sys_update_name>
+        <sys_updated_by>703318399</sys_updated_by>
+        <sys_updated_on>2023-01-09 08:53:43</sys_updated_on>
+        <sys_user_role display_value="x_ggisu_video_por1.video_enablements_access" name="x_ggisu_video_por1.video_enablements_access">36e5b6154754a91024d43b37e26d43fd</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

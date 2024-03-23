@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($window,$location) {
+  /* widget controller */
+  var c = this;
+   c.windowurl=$window.location.href;
+	console.log(c.data.appNames);
+	c.openUrl=function(url){
+	//	if(c.windowurl.includes('/esc?id=home_vpa')){
+		//	var modifiedurl='/esc?'+url;
+		//window.open(modifiedurl);
+		//} else{
+			//var originalurl='/vpa?'+url;
+			//window.open(url);
+		///}
+		var originalurl='/vpa?'+url;
+				window.open(originalurl);
+	} 
+	
+	c.exploreE360=function(url1){
+		window.location.href=url1;
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.append-sidenav{
+float:left;
+}
+
+large{
+ font-weight:bold;
+  color:#00AECF;
+  margin-left:3px;
+}
+.card-img-top{
+ //height:192px; 
+  //height:250px; 
+ // height:210px;
+  height:210px;
+}
+.card-link{
+    background-color: #FF555F;
+    color: #fff;
+    float: right;
+    font-size: 13px;
+  margin-top:-49px;
+    border: 1px solid #FF555F;
+    position: relative;
+    left: -2%;
+}
+
+.card-title{
+ margin-top: 0rem;
+    font-weight: 600;
+    padding-top: 14px;
+    padding-left: 3px;
+  //  color: #10548C;
+  color:#00AECF;
+    font-size:17px;
+    font-family: Arial;
+}
+.card-text{
+ color:#01152b; 
+  padding-left: 2px;
+  margin-top:-10px;
+}
+.card-footer{
+ 
+ font-family: Arial;
+}
+.text-dark{color:#007199; font-family: Arial;}
+ 
+.content-section{margin-top:25px;} 
+
+.heading-content{
+     font-size: 24px;
+    font-weight: 200;
+    font-family: revert; 
+  color:#1E345C;
+  width:50rem;
+   
+}
+
+
+.card{
+ box-shadow: 0 4px 8px 0 grey;
+    transition: .3s;
+    padding: 5px;
+  margin-bottom:15px;
+   display: inline-block;
+  background:#fff;
+  border-radius:5px;
+}
+.fa-play-circle{
+ color:#fff; 
+  font-size:20px;
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+  .tiles{margin-top: 0.7rem;display: inline-block;}
+  .card-img-top{width:30rem;}
+  .card-link{margin-top:0.5rem;}
+
+}
+
+@media (min-width: 376px) and (max-width: 767px){
+ .tiles{margin-top: 0.7rem;display: inline-block;}
+   .card-img-top{width:34rem;}
+   .card-link{margin-top:0.5rem;}
+}
+@media (min-width: 768px) and (max-width: 820px){
+ .tiles{margin-top: 0.7rem;display: grid;justify-content: center;}
+   .card-img-top{width:49rem;}
+   .card-link{margin-top:0.5rem;}
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>video_portal__home_widget</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Video Portal Home Widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.enterprise360Count='';
+	
+	data.dataTableWidget4 = $sp.getWidget('nav_link_video_portal');
+	
+var g1 = new GlideAggregate('x_ggisu_video_por1_video_portal_g_tube');
+g1.addEncodedQuery('application_name=enterprise360^type=training _videos');
+g1.addAggregate('COUNT');
+g1.query();
+while(g1.next()){
+data.e360Count = g1.getAggregate('COUNT');
+}
+var g2 = new GlideAggregate('x_ggisu_video_por1_video_portal_g_tube');
+g2.addEncodedQuery('application_name=itsm^type=training _videos');
+g2.addAggregate('COUNT');
+g2.query();
+while(g2.next()){
+data.ITSMCount = g2.getAggregate('COUNT');
+	
+}
+	var g3 = new GlideAggregate('x_ggisu_video_por1_video_portal_g_tube');
+g3.addEncodedQuery('application_name=custom_app_dev^type=training _videos');
+g3.addAggregate('COUNT');
+g3.query();
+while(g3.next()){
+data.CustomAppCount = g3.getAggregate('COUNT');
+	
+}
+	var g4 = new GlideAggregate('x_ggisu_video_por1_video_portal_g_tube');
+g4.addEncodedQuery('application_name=sn_pmo_process^type=training _videos');
+g4.addAggregate('COUNT');
+g4.query();
+while(g4.next()){
+data.PMOCount = g2.getAggregate('COUNT');
+	
+}
+		var g5 = new GlideAggregate('x_ggisu_video_por1_video_portal_g_tube');
+g5.addEncodedQuery('application_name=ham_and _sam^type=training _videos');
+g5.addAggregate('COUNT');
+g5.query();
+while(g5.next()){
+data.HAMCount = g5.getAggregate('COUNT');
+	
+}
+			var g6 = new GlideAggregate('x_ggisu_video_por1_video_portal_g_tube');
+g6.addEncodedQuery('application_name=sn_training^type=training _videos');
+g6.addAggregate('COUNT');
+g6.query();
+while(g6.next()){
+data.NowTraningCount = g6.getAggregate('COUNT');
+	
+}
+	
+	
+		
+	
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>703318399</sys_created_by>
+        <sys_created_on>2023-01-09 11:45:34</sys_created_on>
+        <sys_id>a37edb19471ce91024d43b37e26d43c7</sys_id>
+        <sys_mod_count>183</sys_mod_count>
+        <sys_name>Video Portal Home Widget</sys_name>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+        <sys_update_name>sp_widget_a37edb19471ce91024d43b37e26d43c7</sys_update_name>
+        <sys_updated_by>703318399</sys_updated_by>
+        <sys_updated_on>2024-01-18 11:47:07</sys_updated_on>
+        <template><![CDATA[<div>
+   <div style="width: auto;margin-left:15px;" class= "container">
+      <div class="content-section">
+         <!-- <p class="text-light text-center" style="font-size:19px;text-indent: 0px;text-align:justify;margin-left:-3px;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>-->
+         <div class="tiles">
+            <div class="col-sm-4 col-md-4">
+               <div class="card">
+                  <!--<img class="card-img-top" src="x_ggisu_video_por1.enterprise360.png" width="100%" alt="Card image cap">-->
+                  <img class="card-img-top" src="/enterprise3601.png" width="100%" alt="Card image cap">
+                  <div class="card-body">
+                     <h5 class="card-title">Enterprise 360</h5>
+                     <p class="card-text">Explore Enterprise360</p>
+                     <large class="" style="float:left">Total videos: {{c.data.e360Count}}</large>
+                     <a ng-click="c.openUrl('id=vpa_training_videos')" class="btn btn-sm btn-primary card-link"><i class="fa fa-play-circle"></i>&nbsp;Watch videos</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+               <div class="card">
+                  <img class="card-img-top" src="ITSM2.png" width="100%" alt="Card image cap">
+                  <div class="card-body">
+                     <h5 class="card-title">ITSM and Platform</h5>
+                     <p class="card-text">Understanding ITSM concepts</p>
+                     <large class="" style="float:left">Total videos: {{c.data.ITSMCount}}</large>
+                     <a href= "/vpa?id=404" class="btn btn-sm btn-primary card-link"><i class="fa fa-play-circle"></i>&nbsp;Watch videos</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+               <div class="card">
+                  <img class="card-img-top" src="custom.jpg" width="100%" alt="Card image cap">
+                  <div class="card-body">
+                     <h5 class="card-title">Custom App Development</h5>
+                     <p class="card-text">Understand Custom App Development</p>
+                     <large class="" style="float:left">Total videos: {{c.data.CustomAppCount}}</large>
+                     <a href= "/vpa?id=custom_app_training_videos" class="btn btn-sm btn-primary card-link"><i class="fa fa-play-circle"></i>&nbsp;Watch videos</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+               <div class="card">
+                  <!-- <img class="card-img-top" src="PmoProcess.png" width="390px" alt="Card image cap">-->
+                  <img class="card-img-top" src="/itsm_platform_img.jpg" width="100%" alt="Card image cap">
+                  <div class="card-body">
+                     <h5 class="card-title">ServiceNow PMO Process</h5>
+                     <p class="card-text">Get Used to ServiceNow PMO process</p>
+                     <large class="" style="float:left">Total videos: {{c.data.PMOCount}}</large>
+                     <a href= "/vpa?id=404" class="btn btn-sm btn-primary card-link"><i class="fa fa-play-circle"></i>&nbsp;Watch videos</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+               <div class="card">
+                  <!-- <img class="card-img-top" src="/ham.jpg" width="390px" alt="Card image cap">-->
+                  <img class="card-img-top" src="/Ham&Sam_img1.jpg" width="100%" alt="Card image cap">
+                  <div class="card-body">
+                     <h5 class="card-title">HAM & SAM Application</h5>
+                     <p class="card-text">Know about HAM & SAM Application</p>
+                     <large class="" style="float:left">Total videos: {{c.data.HAMCount}}</large>
+                     <a href= "/vpa?id=404" class="btn btn-sm btn-primary card-link"><i class="fa fa-play-circle"></i>&nbsp;Watch videos</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+               <div class="card">
+                  <!--<img class="card-img-top" src="nowlearning1.png" width="100%" alt="Card image cap">-->
+                  <img class="card-img-top" src="/nowlearning1.jpg" width="100%" alt="Card image cap">
+                  <div class="card-body">
+                     <h5 class="card-title">ServiceNow Training</h5>
+                     <p class="card-text">Learn more about servicenow concepts</p>
+                     <large class="" style="float:left">Total videos: {{c.data.NowTraningCount}}</large>
+                     <a href= "/vpa?id=vpa_servicenow_training_videos" target="blank" class="btn btn-sm btn-primary card-link"><i class="fa fa-play-circle"></i>&nbsp;Watch videos</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

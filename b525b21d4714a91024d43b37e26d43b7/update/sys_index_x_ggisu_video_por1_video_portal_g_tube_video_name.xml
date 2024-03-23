@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <col_name_string>video_name</col_name_string>
+        <index_col_name element="video_name" name="x_ggisu_video_por1_video_portal_g_tube">b773cb154758a91024d43b37e26d432c</index_col_name>
+        <logical_table_name>x_ggisu_video_por1_video_portal_g_tube</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-01-09 13:05:25</sys_created_on>
+        <sys_id>15c07b5947142d1024d43b37e26d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_ggisu_video_por1_video_portal_g_tube</sys_name>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+        <sys_update_name>sys_index_x_ggisu_video_por1_video_portal_g_tube_video_name</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-01-09 13:05:25</sys_updated_on>
+        <table display_value="Video Portal G-tube" name="x_ggisu_video_por1_video_portal_g_tube">f8277e194754a91024d43b37e26d431b</table>
+        <unique_index>false</unique_index>
+    </sys_index>
+</record_update>

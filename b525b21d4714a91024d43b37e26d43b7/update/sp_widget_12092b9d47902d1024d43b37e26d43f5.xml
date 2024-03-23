@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	 
+		c.redirecttoGentubeHome=function(url){
+		window.location.href=url;
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.btn { /* Blue background */
+ // border: solid 1px; /* Remove borders */
+  color:  #007199; /* White text */
+  padding: 12px 12px /* Some padding */
+  font-size: 20px; /* Set a font size */
+  cursor: pointer; 
+  background: #FAFCFC;/* Mouse pointer on hover */
+  //margin-bottom: 8px;
+  margin: 12px 0px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #cce3e3;
+}
+
+div {
+  background-color: #ffffff;
+  width: 50px;
+//border-right-style: solid;
+}
+  //border: solid 1px;
+   
+.parent {
+  width: 100%;
+  border-right: solid 1px;
+  
+}
+
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  color: #4e4b4b;
+}
+
+.btn .badge {
+    position: relative;
+    top: 6px;
+  	outline: 0px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #cce3e3;
+}
+
+.nav{
+ height:24px;
+ width:100%;
+ padding: 0px 0px 0px 2px;
+  
+}
+
+.fa2{
+ padding: 0px 0px 0px 6px
+}
+
+.active {
+  background-color: #cce3e3;
+  box-shadow: none;
+}
+
+.btn:focus, .btn.focus, .btn:active:focus, .btn.focus:active, .btn.active:focus, .btn.active.focus {
+    
+    outline: none!important;
+    outline-offset: 0px !important; 
+  	border: none;
+  	//color: rgb(99, 102, 241);
+}
+
+.layout {
+  background: #FAFCFC 0% 0% no-repeat padding-box;
+}
+
+.enav {
+  position: fixed;
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 0px;
+  background-color: #fff;
+  box-shadow: 2px 0px 5px #aaaaaa;
+  
+}
+
+.easide {
+  width: 82px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding-right: 16px;
+  padding-left: 12px;
+  min-height: 100vh;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.enavLink {
+  color: rgba(75, 85, 99, 1);
+  padding: 8px 0;
+  cursor: pointer;
+  border-radius: 8px;
+      padding-bottom: 15.6rem;
+    margin-top: 33px;
+}
+
+.enavLinkImg {
+  height: 32px;
+  width: 60px;
+  padding: 0 12px;
+  background-color: transparent;
+}
+
+.divider {
+  height: 2px;
+  width: 124%;
+  background-color: rgba(229, 231, 235,1);
+}
+
+.enavLink:focus{
+ outline:none;
+  border:none;
+  box-shadow:none;
+}
+.nav-link-text{
+  font-size:16px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>nav_link_video_portal</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Nav Links Video Portal</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>703318399</sys_created_by>
+        <sys_created_on>2023-01-09 12:32:04</sys_created_on>
+        <sys_id>12092b9d47902d1024d43b37e26d43f5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Nav Links Video Portal</sys_name>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+        <sys_update_name>sp_widget_12092b9d47902d1024d43b37e26d43f5</sys_update_name>
+        <sys_updated_by>703318399</sys_updated_by>
+        <sys_updated_on>2023-02-23 07:26:04</sys_updated_on>
+        <template><![CDATA[<nav class="enav">
+    <a target="_blank" ng-click="c.redirecttoGentubeHome('/vpa?id=home_vpa')" class="enavLink" title="Overview">
+      <img
+        src="360Overview.svg"
+        class="enavLinkImg"
+        width="57px"
+        height="63px"
+        alt="home" 
+      />
+      <br> <p class="text-center nav-link-text">Home</p>
+    </a>
+      <div style="margin-top:20px;margin-bottom:20px;">
+      <div class="divider"></div>
+    </div>
+    
+     <a target="_blank"  href="/vpa?id=vpa_enablment_videos" 
+      class="enavLink"
+      title="App Store"
+    >
+      <img
+        src="360Portfolio.svg"
+        class="enavLinkImg"
+        width="57"
+        height="63"
+        alt="home"
+      />
+            <br> <p class="text-center nav-link-text" style="font-size:11px;">Enablement</p>
+       
+    </a>
+    
+ 
+  </nav>]]></template>
+    </sp_widget>
+</record_update>

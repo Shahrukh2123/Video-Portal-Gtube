@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">d110a9f1477f3150d83d3247e26d4355</sp_column>
+        <sp_widget display_value="Custom App Training Video Widget">20be113d473f3150d83d3247e26d43c1</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>703318399</sys_created_by>
+        <sys_created_on>2024-01-18 11:41:26</sys_created_on>
+        <sys_id>e120e5f1477f3150d83d3247e26d4376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+        <sys_update_name>sp_instance_e120e5f1477f3150d83d3247e26d4376</sys_update_name>
+        <sys_updated_by>703318399</sys_updated_by>
+        <sys_updated_on>2024-01-18 11:41:26</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=e120e5f1477f3150d83d3247e26d4376"/>
+</record_update>

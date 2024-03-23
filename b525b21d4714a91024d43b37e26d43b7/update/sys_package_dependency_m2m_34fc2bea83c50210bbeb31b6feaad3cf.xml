@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System Import Sets" source="com.glide.system_import_set">a06c21d28d30021087de63ac7f1f00b4</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>703315913</sys_created_by>
+        <sys_created_on>2023-07-15 03:21:56</sys_created_on>
+        <sys_id>34fc2bea83c50210bbeb31b6feaad3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_updated_by>703315913</sys_updated_by>
+        <sys_updated_on>2023-07-15 03:21:56</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>
