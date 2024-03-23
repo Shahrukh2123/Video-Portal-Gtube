@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name> Video Portal E360 Enablement Video - Container 1</name>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_page display_value="vpa_enablment_videos">6e7683d547d8a91024d43b37e26d43b7</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>703318399</sys_created_by>
+        <sys_created_on>2023-01-09 11:19:56</sys_created_on>
+        <sys_id>54a85bd947d4e91024d43b37e26d4360</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name> Video Portal E360 Enablement Video - Container 1</sys_name>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+        <sys_update_name>sp_container_54a85bd947d4e91024d43b37e26d4360</sys_update_name>
+        <sys_updated_by>703318399</sys_updated_by>
+        <sys_updated_on>2023-01-09 11:20:01</sys_updated_on>
+        <title/>
+        <width>container-fluid</width>
+    </sp_container>
+</record_update>

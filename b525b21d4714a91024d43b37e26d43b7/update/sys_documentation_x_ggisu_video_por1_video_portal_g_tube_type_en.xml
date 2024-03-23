@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="type" label="Type" language="en" table="x_ggisu_video_por1_video_portal_g_tube">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <help/>
+            <hint/>
+            <label>Type</label>
+            <language>en</language>
+            <name>x_ggisu_video_por1_video_portal_g_tube</name>
+            <plural>Types</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>703318399</sys_created_by>
+            <sys_created_on>2023-01-09 09:44:17</sys_created_on>
+            <sys_id>cbb2839d4718a91024d43b37e26d43bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Type</sys_name>
+            <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+            <sys_update_name>sys_documentation_x_ggisu_video_por1_video_portal_g_tube_type_en</sys_update_name>
+            <sys_updated_by>703318399</sys_updated_by>
+            <sys_updated_on>2023-01-09 09:44:17</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

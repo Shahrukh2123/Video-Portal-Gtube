@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.panel-left{
+    margin-top: 20px;
+}
+.not-found-img{
+height: 20rem;
+  width:29rem;
+  height: 351px;
+  width: 715px;
+  background: #FF555F;
+}
+.panel-default{
+border:2px solid #fff;
+}
+.backbutton{
+background-color: #FF555F;
+    color: #FFF;
+    border: 0.1rem solid #FF555F;
+    margin-top:-5rem;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>Video_not_found_video_portal</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Video not found video portal</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>703318399</sys_created_by>
+        <sys_created_on>2023-01-09 12:25:26</sys_created_on>
+        <sys_id>4277a35147902d1024d43b37e26d43ed</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Video not found video portal</sys_name>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+        <sys_update_name>sp_widget_4277a35147902d1024d43b37e26d43ed</sys_update_name>
+        <sys_updated_by>703318399</sys_updated_by>
+        <sys_updated_on>2023-03-09 11:21:13</sys_updated_on>
+        <template><![CDATA[[<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+       <div class="panel-default">
+    <div class="panel-body">
+      <h3 class="text-primary text-center" style="margin-bottom:3.5rem;">No video uploaded yet !!</h3>
+        <div class="backtoLanding" style="float:left">
+          <a class="btn btn-primary backbutton" href="/vpa?id=home_vpa"><i class="fa fa-arrow-left" style="color:white;"></i>&nbsp;Back</a>
+       </div>
+      <div class="not-found text-center">
+        <!--<img src="https://img.freepik.com/free-vector/no-data-concept-illustration_114360-2506.jpg?size=626&ext=jpg&ga=GA1.2.953464805.1661425618&semt=sph" clas="not-found-img">-->
+         <img src="video_not_found.png" class="not-found-img">
+      </div>
+    </div>
+    
+  </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

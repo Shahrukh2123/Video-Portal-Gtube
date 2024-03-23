@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <human_readable_url_structure/>
+        <id>custom_app_training_videos</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles>x_ggisu_video_por1.video_portal _usage_user</roles>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>703318399</sys_created_by>
+        <sys_created_on>2024-01-18 11:40:40</sys_created_on>
+        <sys_id>bbdf1971477f3150d83d3247e26d43a0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>custom_app_training_videos</sys_name>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+        <sys_update_name>sp_page_bbdf1971477f3150d83d3247e26d43a0</sys_update_name>
+        <sys_updated_by>703318399</sys_updated_by>
+        <sys_updated_on>2024-01-18 11:44:12</sys_updated_on>
+        <title>Custom App Training Videos</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=bbdf1971477f3150d83d3247e26d43a0"/>
+</record_update>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">da92e2d44729ed5024d43b37e26d4395</sp_column>
+        <sp_widget display_value="service now training videos">bd4f461c4721ed5024d43b37e26d43a3</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>703318399</sys_created_by>
+        <sys_created_on>2023-03-09 08:19:20</sys_created_on>
+        <sys_id>3d152e1447a9ed5024d43b37e26d4334</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+        <sys_update_name>sp_instance_3d152e1447a9ed5024d43b37e26d4334</sys_update_name>
+        <sys_updated_by>703318399</sys_updated_by>
+        <sys_updated_on>2023-03-09 08:19:20</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=3d152e1447a9ed5024d43b37e26d4334"/>
+</record_update>

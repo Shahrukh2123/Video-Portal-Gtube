@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope,$sce) {
+  /* widget controller */
+  var c = this;
+	c.viewMore='false';
+	c.showBtn=true;
+   console.log(c.data.TrainigVideos); 
+	$scope.trustSrc=function(url){ 
+		return $sce.trustAsResourceUrl(url);
+	}	
+	
+	$scope.shortenVideoTitle=function(title){
+		if(title.length>28){
+				c.new_title = title.substring(0, 28) + "...";
+		return c.new_title;
+		} else{
+			return title;
+		}
+	}
+
+	c.loadMoreVideos=function(){
+		c.viewMore='true';
+		c.showBtn='false';
+		console.log(c.data.AllTrainingVideo);
+		  c.server.get({
+          action: "ViewMore"
+        }).then(function(response) {
+				console.log(response);
+				c.data.AllTrainingVideo=response.data.AllTrainingVideo;
+			console.log(c.data.AllTrainingVideo);
+			document.getElementsByClassName('btnPink').style.display='none';	
+       
+        });
+	}
+		c.loadLessVideos=function(){
+		 c.showBtn='false';
+		  c.server.get({
+          action: "ViewLess"
+        }).then(function(response) {
+				console.log(response);
+				c.showBtn=false;
+			c.data.AllTrainingVideo=response.data.AllTrainingVideo;
+			console.log(c.data.AllTrainingVideo);
+       
+        });
+	}
+	
+	
+	
+	
+	
+	
+	
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.mainbox {
+    box-shadow: 0 4px 8px 0 grey;
+}
+
+#demo{
+ margin-top:18rem;
+ display:block; 
+ height:50px; 
+}
+#container1{
+ display:none; 
+}
+
+
+.vidios-container {
+    transition: .3s;
+    margin-bottom: 15px;
+    z-index: 6;
+      min-width: 0;
+    background: #fff;
+}
+.contents{
+ height:78px;
+}
+.btnPink{
+    background-color:#FF555F;
+  color:#FFF;
+  border:1px solid #FF555F;
+     margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+iframe{
+ border:none; 
+}
+.video-embed{
+ padding:10px;
+}
+.video_wrapper{
+  font-size:14px;
+  margin-top:1px;
+}
+
+iframe.overlayTitle-47{
+  font-size:14px;
+}
+
+
+input {
+    width: 296px;
+    height: 37px;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 32px;
+    float:right;
+    //box-shadow: 0 4px 8px 0 grey;
+}
+.video_name,.video_document{
+ font-size: 17px;
+  padding-left: 10px;
+  margin-top:-1px;
+  padding-bottom: 4px;
+  color:#01152b!important;
+  font-family:Arial;
+  font-weight:bold;
+  
+}
+
+input::placeholder {
+    font-weight: 500;
+    color: #073262;
+}
+
+input:placement {
+    font-size: 16px;
+}
+.backtoLanding{
+ display:block; 
+ padding-bottom:3rem;
+}
+.fa-search {
+    color: #073262;
+    font-size: 28px;
+    float: right;
+    margin-top: 0.4rem;
+   position: relative;
+    right: -29rem;
+}
+.overlayTitle-47{
+ font-size:14px; 
+}
+.video-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    iframe,
+    input {
+        width: 100%;
+    }
+  h2{font-size: 22px;}
+  .search-wrap-text{margin-left: -25px;}
+  .vidios-container{padding-left: 5rem;padding-right: 6rem;}
+  .backbutton {margin-left:23px;}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .fa-search {
+        float: right;
+        margin-top: -45px;
+    }
+  input{
+    width: 20.7rem;
+    margin-right: 45px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .fa-search {
+       // float: right;
+      display:none;
+       // margin-top: -45px;
+    }
+   input{
+    //width: 20.7rem;
+    //margin-right: 45px;
+      display:none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .fa-search {
+        float: right;
+        margin-top: -45px;
+         margin-right: 36rem;
+    }
+  .fa-search{display:none;}
+     input{
+    //width: 20.7rem;
+    //margin-right: 45px;
+      display:none;
+  }
+  .vidios-container{
+    padding-left:55px;
+     padding-right:65px;
+  }
+  iframe{height:320px;width:100%;}
+  .backbutton{margin-left:4rem;}
+}
+
+
+
+.backbutton {
+    background-color:#FF555F;
+  color:#FFF;
+  border:1px solid #FF555F;
+  margin-bottom: 3rem;
+}
+
+
+.backbutton:hover {
+    background-color: #FF555F;
+    color: #FFF;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>ServiceNow Traning Videos Widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	data.TrainigVideos = [];
+	data.AllTrainingVideo=[];
+	if(input && input.action=="ViewMore"){
+		
+var getTrainingVideo1 = new GlideRecord('x_ggisu_video_por1_video_portal_g_tube');
+getTrainingVideo1.addEncodedQuery('type=training _videos^application_name=sn_training');
+ getTrainingVideo1.orderByDesc('sys_created_on');
+getTrainingVideo1.query();
+while (getTrainingVideo1.next()) {
+    var found1 = {};
+    found1.video_name = getTrainingVideo1.video_name.toString();
+    found1.video_link = getTrainingVideo1.video_link.toString();
+    found1.video_presenter = getTrainingVideo1.video_presenter.getDisplayValue();
+    found1.document_link = getTrainingVideo1.document_link.toString();
+	 found1.ms_stream_url	=getTrainingVideo1.ms_stream_redirect_url.toString();	
+    found1.recorded_date =  getTrainingVideo1.recorded_date;
+    var gd = new GlideDate();
+    gd.setValue(getTrainingVideo1.recorded_date);
+    found1.recorded_date = gd.getByFormat("dd-MMM-yyyy");
+    data.AllTrainingVideo.push(found1);
+}
+	}
+	else{
+		var getTrainingVideo = new GlideRecord('x_ggisu_video_por1_video_portal_g_tube');
+getTrainingVideo.addEncodedQuery('type=training _videos^application_name=sn_training');
+ getTrainingVideo.orderByDesc('sys_created_on');
+		 	getTrainingVideo.setLimit(8); 
+getTrainingVideo.query();
+while (getTrainingVideo.next()) {
+    var found = {};
+    found.video_name = getTrainingVideo.video_name.toString();
+    found.video_link = getTrainingVideo.video_link.toString();
+    found.video_presenter = getTrainingVideo.video_presenter.getDisplayValue();
+    found.document_link = getTrainingVideo.document_link.toString();
+	 found.ms_stream_url	=getTrainingVideo.ms_stream_redirect_url.toString();	
+    found.recorded_date =  getTrainingVideo.recorded_date;
+    var gd = new GlideDate();
+    gd.setValue(getTrainingVideo.recorded_date);
+    found.recorded_date = gd.getByFormat("dd-MMM-yyyy");
+    data.TrainigVideos.push(found);
+}
+	}
+
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>703318399</sys_created_by>
+        <sys_created_on>2024-01-06 16:19:35</sys_created_on>
+        <sys_id>53bc68ca47a3351023a95ffbd36d4360</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>ServiceNow Traning Videos Widget</sys_name>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+        <sys_update_name>sp_widget_53bc68ca47a3351023a95ffbd36d4360</sys_update_name>
+        <sys_updated_by>703318399</sys_updated_by>
+        <sys_updated_on>2024-01-06 16:25:17</sys_updated_on>
+        <template><![CDATA[<div>
+   <center><img src="/x_ggisu_ops360_t_0.genpact_loading.gif" id="demo" width="60px"></center>
+</div>
+<div class="container" id="container1">
+    <div class="row" style="margin-left:-6.4rem;margin-right:-7.5rem;">
+        <div class="col-md-12 col-xs-12">
+            <h2 class="text-secondary text-center" style="font-weight: 400;color: #073262;font-family: Arial;margin-bottom:28px;">ServiceNow Training Videos</h2>
+            <div class="backtoLanding">
+              <div style="float:left;">
+                 <a class="btn btn-primary backbutton" href="/vpa?id=home_vpa"><i class="fa fa-arrow-left" style="color:white;"></i>&nbsp;Back</a>
+              </div>
+              <div style="float:right;">
+         <span class="search-wrap-text" style="margin-left:18px;"> <input type="text" class="form-control" id="inputText" name="output" autocomplete="off" value="" placeholder="Search video" onkeyup="searchVideo()"><i class="fa fa-search" style="font-size:28px"></i></span>
+              </div>
+              </div>
+        </div>
+        <div class="col-md-3 col-xs-12 vidios-container" ng-if="c.viewMore=='false'" ng-repeat="videoDetail in c.data.TrainigVideos">
+            <div class="mainbox">
+                <div style="background: white">
+               
+                  <div class="video_embed" style="padding:5px;">
+                    <center>
+                      <div class="video_wrapper">
+                      <iframe class="IFrame" height="200px" width="275px" ng-src="{{trustSrc(videoDetail.video_link)}}" allowfullscreen></iframe>
+                      </div>
+                    </center>
+                  </div>
+                  
+                    <div class="contents">
+                      <h4 class="video_name" style="font-family: Arial;">{{shortenVideoTitle(videoDetail.video_name)}}</h4>
+       
+                         <a target="_blank" ng-href="{{videoDetail.ms_stream_url}}" style="cursor:pointer;text-decoration:none;color:!important;margin-left:10px;font-family: Guardian Egyptian Sans;">Click here to like or comment&nbsp; <i class="fa fa-comments"></i></a>
+                      <br>
+                        <a target="_blank" ng-href="{{videoDetail.document_link}}" style="cursor:pointer;text-decoration:none;color:#FF555F;margin-left:10px;font-family: Guardian Egyptian Sans;" ng-if="videoDetail.document_link!=''"><i>Click here to view the document</i>&nbsp;<i class="fa fa-file-pdf-o" style="font-size: 15px;color:#FF555F"></i></a>
+                    <!--<p class="font-weight-light" style="margin-left:12px;color:#FF555F;font-weight:bold">Created on:&nbsp;<u style="text-decoration:none;font-weight:500;color:#FF555F">{{videoDetail.recorded_date}}</u></p>-->
+                       <!-- <p class="font-weight-light" style="margin-left:12px;color:#10548C;"><b>Presenter</b>:<b>{{videoDetail.video_presenter}}</b></p> -->
+   
+                    </div> 
+                </div> 
+            </div>
+        </div>
+          <div class="col-md-3 col-xs-12 vidios-container" ng-if="c.viewMore=='true'" ng-repeat="videoDetail1 in c.data.AllTrainingVideo">
+            <div class="mainbox">
+                <div style="background: white">
+               
+                  <div class="video_embed" style="padding:5px;">
+                    <center>
+                      <div class="video_wrapper">
+                      <iframe class="iFrame" height="200px" width="275px" ng-src="{{trustSrc(videoDetail1.video_link)}}" allowfullscreen></iframe>
+                      </div>
+                    </center>
+                  </div>
+                  
+                    <div class="contents">
+                      <h4 class="video_name" style="font-family: Arial;">{{shortenVideoTitle(videoDetail1.video_name)}}</h4>
+       
+                         <a target="_blank" class="mt1" ng-href="{{videoDetail1.ms_stream_url}}" style="cursor:pointer;text-decoration:none;color:#00AECF;margin-left:10px;font-size:15px;">Click here to like or comment &nbsp;<i class="fa fa-comments"></i></a>
+                      <br>
+                        <a target="_blank" ng-href="{{videoDetail1.document_link}}" style="cursor:pointer;text-decoration:none;color:#FF555F;margin-left:10px;font-family: Guardian Egyptian Sans;" ng-if="videoDetail1.document_link!=''"><i>Click here to view the document</i>&nbsp;<i class="fa fa-file-pdf-o" style="font-size: 15px;color:#FF555F"></i></a>
+                    <!--<p class="font-weight-light" style="margin-left:12px;color:#FF555F;font-weight:bold">Created on:&nbsp;<u style="text-decoration:none;font-weight:500;color:#FF555F">{{videoDetail.recorded_date}}</u></p>-->
+                       <!-- <p class="font-weight-light" style="margin-left:12px;color:#10548C;"><b>Presenter</b>:<b>{{videoDetail.video_presenter}}</b></p> -->
+   
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 colxs-12">
+        <center>
+        <a class="btn btn-primary btnPink" ng-click="c.loadMoreVideos()" ng-if="c.showBtn==true">View more</a> 
+        </center>
+      </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function searchVideo() {
+      //let filter=e.value;
+        let filter = document.getElementById('inputText').value.toUpperCase();
+      // let filter = document.getElementsByClassName('inputText').value.toUpperCase();
+       // let item = document.querySelectorAll('.vidios-container');
+        let l = document.getElementsByTagName("h4");
+        let vLink = document.getElementsByTagName("iframe");
+        for (var i = 0; i <= l.length; i++) {
+            let item = document.querySelectorAll('.vidios-container');
+            let a = item[i].getElementsByClassName('video_name')[0];
+             console.log(item);
+            let vL = item[i].getElementsByClassName("IFrame")[0];
+            let value = a.innerHTML || a.innerText || a.textContent;
+            if (value.toUpperCase().indexOf(filter) > -1) {
+                item[i].style.display = "";
+            } 
+      else {
+                item[i].style.display = "none";
+            }
+        }
+    }
+    const myTimeout = setTimeout(myGreeting, 3000);
+
+function myGreeting() {
+  document.getElementById("demo").style.display = 'none';
+   document.getElementById("container1").style.display = 'block';
+}
+</script>
+]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_guide">
+    <sys_embedded_tour_guide action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_parameters/>
+        <autolaunch_order>0</autolaunch_order>
+        <context>vpa?id=vpa_training_videos&amp;gtd_portal_title=Video Portal Analysis&amp;gtd_page_title=Video Portal E360 Traning Video</context>
+        <description/>
+        <has_concl>true</has_concl>
+        <has_intro>true</has_intro>
+        <name>Training Video GTube</name>
+        <options/>
+        <roles/>
+        <route_parameters/>
+        <sp_page display_value="vpa_training_videos">3135cb914798a91024d43b37e26d430b</sp_page>
+        <sp_portal display_value="Video Portal Analysis">295fd759475ce91024d43b37e26d4332</sp_portal>
+        <status>published</status>
+        <sys_class_name>sys_embedded_tour_guide</sys_class_name>
+        <sys_created_by>703318399</sys_created_by>
+        <sys_created_on>2023-03-16 09:30:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a278f6a247a9e1d023a95ffbd36d434d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Training Video GTube</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
+        <sys_update_name>sys_embedded_tour_guide_a278f6a247a9e1d023a95ffbd36d434d</sys_update_name>
+        <sys_updated_by>703318399</sys_updated_by>
+        <sys_updated_on>2023-03-16 09:39:33</sys_updated_on>
+        <tour_id>TOUR0000054</tour_id>
+        <type>service_portal</type>
+    </sys_embedded_tour_guide>
+</record_update>
