@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f8277e194754a91024d43b37e26d431b" label="Video Portal G-tube" max_length="40" name="x_ggisu_video_por1_video_portal_g_tube" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Application Name" mandatory="true" max_length="100" name="application_name" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Custom Application Development" value="custom_app_dev"/>
+                <element inactive_on_update="false" label="Enterprise360" value="enterprise360"/>
+                <element inactive_on_update="false" label="HAM &amp; SAM" value="ham_and _sam"/>
+                <element inactive_on_update="false" label="ITSM Platform" value="itsm"/>
+                <element inactive_on_update="false" label="MS Stream Video" value="ms_stream_video"/>
+                <element inactive_on_update="false" label="ServiceNow PMO Process" value="sn_pmo_process"/>
+                <element inactive_on_update="false" label="ServiceNow Training" value="sn_training"/>
+            </choice>
+        </element>
+        <element label="Document Link" max_length="1000" name="document_link" type="string"/>
+        <element label="MS Stream Redirect URL" max_length="1000" name="ms_stream_redirect_url" type="string"/>
+        <element label="Recorded Date" max_length="40" name="recorded_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Enablement" value="enablement"/>
+                <element inactive_on_update="false" label="Training Videos" value="training _videos"/>
+            </choice>
+        </element>
+        <element label="Video Link" max_length="1000" name="video_link" type="string"/>
+        <element label="Video Name" max_length="1000" name="video_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Video Presenter" max_length="40" name="video_presenter" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="video_name"/>
+        </index>
+        <index name="index2">
+            <element name="video_presenter"/>
+        </index>
+    </element>
+</database>

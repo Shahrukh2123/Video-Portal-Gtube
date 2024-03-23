@@ -165,7 +165,7 @@ $accessible-placeholder-gray: #565656;&#13;
 &#13;
 &#13;
 </css_variables>
-        <footer display_value="Genpact Footer">150ba5368758345076294338cebb3579</footer>
+        <footer display_value="">150ba5368758345076294338cebb3579</footer>
         <footer_fixed>true</footer_fixed>
         <header display_value="Video Portal Header">f6af92f94755a59024d43b37e26d4302</header>
         <name>La Jolla - Video Portal GTube</name>

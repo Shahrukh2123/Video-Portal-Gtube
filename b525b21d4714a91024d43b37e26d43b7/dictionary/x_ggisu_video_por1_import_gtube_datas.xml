@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="aaff6f9547142d1024d43b37e26d4366" extends="sys_import_set_row" label="导入集行" max_length="40" name="x_ggisu_video_por1_import_gtube_datas" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=action" label="action" max_length="40" name="u_action" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=application_name" label="application_name" max_length="40" name="u_application_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=display_value" label="display_value" max_length="40" name="u_display_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=document_link" label="document_link" max_length="404" name="u_document_link" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=recorded_date" label="recorded_date" max_length="40" name="u_recorded_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sys_created_by" label="sys_created_by" max_length="40" name="u_sys_created_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sys_created_on" label="sys_created_on" max_length="40" name="u_sys_created_on" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sys_id" label="sys_id" max_length="40" name="u_sys_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sys_mod_count" label="sys_mod_count" max_length="40" name="u_sys_mod_count" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sys_updated_by" label="sys_updated_by" max_length="40" name="u_sys_updated_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sys_updated_on" label="sys_updated_on" max_length="40" name="u_sys_updated_on" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=type" label="type" max_length="40" name="u_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=unload" label="unload" max_length="40" name="u_unload" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=unload_date" label="unload_date" max_length="40" name="u_unload_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=video_link" label="video_link" max_length="146" name="u_video_link" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=video_name" label="video_name" max_length="46" name="u_video_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=video_presenter" label="video_presenter" max_length="40" name="u_video_presenter" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=x_ggisu_video_por1_video_portal_g_tube" label="x_ggisu_video_por1_video_portal_g_tube" max_length="40" name="u_x_ggisu_vide__portal_g_tube" type="string"/>
+    </element>
+</database>

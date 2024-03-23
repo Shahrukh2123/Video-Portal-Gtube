@@ -12,13 +12,13 @@
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>703315913</sys_created_by>
         <sys_created_on>2023-07-15 03:21:56</sys_created_on>
-        <sys_id>658ce02947cc7958ccf91382e36d43c3</sys_id>
+        <sys_id>f4fc6bea83c50210bbeb31b6feaad30f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_ggisu_video_por1_video_portal_g_tube</sys_name>
         <sys_package display_value="Video Portal Analysis" source="x_ggisu_video_por1">b525b21d4714a91024d43b37e26d43b7</sys_package>
         <sys_policy/>
         <sys_scope display_value="Video Portal Analysis">b525b21d4714a91024d43b37e26d43b7</sys_scope>
-        <sys_update_name>ua_table_licensing_config_658ce02947cc7958ccf91382e36d43c3</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_f4fc6bea83c50210bbeb31b6feaad30f</sys_update_name>
         <sys_updated_by>703315913</sys_updated_by>
         <sys_updated_on>2023-07-15 03:21:56</sys_updated_on>
     </ua_table_licensing_config>
